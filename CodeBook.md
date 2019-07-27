@@ -5,11 +5,11 @@ date: "27 07 2019"
 output: html_document
 ---
 
-## The steps the original data was modified:
+## The steps by which the original data were modified:
 
 1. The training and test sets were merged to create one data set (using rbind and cbind)
 2. The measurements on the mean and standard deviation were extracted for each measurement (using select() function).
-3. Descriptive activity names were added to the data set
+3. Descriptive activity names were giving to the data sets
 4. Data sets were named with descriptive variable names
 5. Independent tidy data set with the average of each variable for each activity and each subject was created.
 
