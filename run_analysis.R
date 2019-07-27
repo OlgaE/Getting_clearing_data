@@ -2,10 +2,10 @@
 library(dplyr)
 
 #downloading and unzipping the archive
-filename <- "Coursera_DS3_Final.zip"
-fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileURL, filename, method="auto")
-unzip(filename)
+# filename <- "Coursera_DS3_Final.zip"
+# fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+# download.file(fileURL, filename, method="auto")
+# unzip(filename)
 
 # Creting variables
 features <- read.table("UCI HAR Dataset/features.txt", col.names = c("n","formulas"))
