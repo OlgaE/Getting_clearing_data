@@ -40,10 +40,20 @@ mean_std_data$activity_id <- activities[mean_std_data$activity_id, 2]
 
 # Replacing some of the acronyms by a more descriptive word:
 names(mean_std_data)[2] = "activity"
+
+# Replacing "Acc" by "Accelerometer" in the column names
 names(mean_std_data)<-gsub("Acc", "Accelerometer", names(mean_std_data))
+
+# Replacing "Gyro" by "Gyroscope" in the column names
 names(mean_std_data)<-gsub("Gyro", "Gyroscope", names(mean_std_data))
+
+# Replacing "Mag" by "Magnitude" in the column names
 names(mean_std_data)<-gsub("Mag", "Magnitude", names(mean_std_data))
+
+# Replacing "t" by "Time" in the column names
 names(mean_std_data)<-gsub("^t", "Time", names(mean_std_data))
+
+# Replacing "f" by "Frequency" in the column names
 names(mean_std_data)<-gsub("^f", "Frequency", names(mean_std_data))
 
 # Grouping data to be used for averaging:
