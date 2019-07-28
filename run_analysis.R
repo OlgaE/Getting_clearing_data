@@ -2,7 +2,7 @@
 library(dplyr)
 
 #downloading and unzipping the archive
-# filename <- "Coursera_DS3_Final.zip"
+# filename <- "Getting_clearing_data_Final.zip"
 # fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 # download.file(fileURL, filename, method="auto")
 # unzip(filename)
