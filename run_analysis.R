@@ -60,7 +60,7 @@ names(mean_std_data)<-gsub("^f", "Frequency", names(mean_std_data))
 grouped_data <- group_by(mean_std_data, subject, activity)
 
 # Taking the average for avery variable and every subject:
-data <- summarise_all(grouped_data, funs(mean))
+data <- summarise_all(grouped_data, mean)
 
 # Creating the final .txt file:
 write.table(data, "data.txt", row.name=FALSE)
